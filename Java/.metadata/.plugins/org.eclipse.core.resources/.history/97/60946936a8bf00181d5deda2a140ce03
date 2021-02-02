@@ -1,0 +1,41 @@
+import java.util.Arrays;
+
+import java.util.Scanner;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Arc2D;
+import java.awt.geom.Ellipse2D;
+
+import javax.swing.*;
+
+import javax.swing.JFrame;
+
+public class MercMan extends JComponent {
+	
+	public void paintComponent(Graphics g) {
+		
+		
+		Graphics2D g2 = (Graphics2D) g;
+		super.paintComponent(g);
+		this.setBackground(Color.LIGHT_GRAY);
+		
+		
+		Ellipse2D.Double head = new Ellipse2D.Double(getWidth()/2 - ((getWidth()/6)/2) , 0, getWidth()/6, getHeight()/6);
+		
+		Ellipse2D.Double leftEye = new Ellipse2D.Double(getWidth()/2 - ((getWidth()/6)/2) - getWidth()/12 , getHeight()/2 - ((getHeight()/2.2)) , getWidth()/24, getHeight()/24);
+		
+		Ellipse2D.Double rightEye = new Ellipse2D.Double(getWidth()/2 - ((getWidth()/6)/2) + getWidth()/12 , (getHeight()/2 - (getHeight()/2.2)) , getWidth()/24, getHeight()/24);
+		
+		Arc2D.Double mouth = new Arc2D.Double(getWidth()/2 - ((getWidth()/6)/3.7), (getHeight()/2 - (getHeight()/2.35)), getWidth()/12, getHeight()/12, 180, 180, Arc2D.PIE);
+		
+		g2.setColor(Color.GREEN);
+		g2.fill(head);
+		
+		g2.setColor(Color.BLUE);
+		g2.fill(leftEye);
+		g2.fill(rightEye);
+		
+		g2.setColor(Color.RED);
+		g2.fill(mouth);
+	}
+}

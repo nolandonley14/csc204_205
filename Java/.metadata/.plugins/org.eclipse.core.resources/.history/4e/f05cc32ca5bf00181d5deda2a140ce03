@@ -1,0 +1,27 @@
+import java.util.Arrays;
+
+import java.util.Scanner;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+import javax.swing.JFrame;
+
+
+public class MercManViewer {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame();
+		frame.setTitle("Nolan's MercMan");
+		frame.setSize(300, 400);
+		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+		MercMan man = new MercMan();
+		frame.add(man);
+		frame.setVisible(true);
+		
+		
+
+	}
+
+}

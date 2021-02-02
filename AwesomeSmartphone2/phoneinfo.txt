@@ -1,0 +1,11 @@
+Smartphones with Prices
+Samsung Galaxy S9, 699.99, 199.99, "galaxyS9.png"
+iPhone X, 999.99, 349.99, "iphoneX.png"
+Google Pixel 3, 555.99, 79.99, "googlePixel.png"
+Motorola Moto G2, 599.00, 0.00, "Motorola.png"
+Huawei Mate 20 Pro, 1099.99, 499.99, "Huawei.png"
+Area Code Options
+478
+404
+678
+229

@@ -1,0 +1,27 @@
+import java.util.Arrays;
+
+import java.util.Scanner;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Ellipse2D;
+
+import javax.swing.*;
+
+import javax.swing.JFrame;
+
+public class MercMan extends JComponent {
+	
+	double width = getWidth();
+	double height = getHeight();
+	
+	public void paintComponent(Graphics g) {
+		
+		Graphics2D g2 = (Graphics2D) g;
+		super.paintComponent(g);
+		this.setBackground(Color.LIGHT_GRAY);
+		
+		
+		Ellipse2D.Double head = new Ellipse2D.Double(width/2, 1, 50, 50);
+		g2.fill(head);
+	}
+}
